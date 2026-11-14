@@ -12,7 +12,7 @@ app.post('/users', (req,res) => {
     const {name, email} = req.body
     db.query('INSERT INTO users (name, email) VALUES (?, ?)', [name, email], (err, results) => {
         if(err) return res.status(500).json({error: err.message});
-        res.status(201).json({id: results.insertId, name, email});
+        res.status(201).json({id_user: results.insertId, name, email});
     });
 });
 
