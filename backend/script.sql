@@ -1,17 +1,17 @@
-CREATE DATABASE IF NOT EXISTS db_cadastroUsuarios;
-USE db_cadastroUsuarios;
+CREATE DATABASE IF NOT EXISTS cadastro_db;
+USE cadastro_db;
 
-CREATE TABLE usuario(
-    id_usuario INT PRIMARY KEY AUTO INCREMENT,
-    nome VARCHAR(150) NOT NULL,
+CREATE TABLE users(
+    id_user INT PRIMARY KEY AUTO INCREMENT,
+    name VARCHAR(150) NOT NULL,
     email VARCHAR(150) NOT NULL UNIQUE
 );
 
 /*
-INSERT INTO usuario (nome, email) VALUES (Teste, teste@email.com);
+INSERT INTO users (nome, email) VALUES (Teste, teste@email.com);
 
-SELECT * FROM usuario
+SELECT * FROM users
 
-DELETE FROM usuario WHERE id > 2;
+DELETE FROM users WHERE id > 2;
 
-DROP TABLE usuario;
+DROP TABLE users;
