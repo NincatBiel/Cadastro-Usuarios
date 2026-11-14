@@ -16,8 +16,11 @@ form.addEventListener('submit', async(e) => {
         });
 
         if (!res.ok) throw new Error('Erro ao completar cadastro');
+        if (res.ok) alert('Cadastro efetuado com sucesso!');
+
         form.reset();
 
+        
     } catch (err) {
         alert('Erro ao completar operação: ' + err.message);
     }

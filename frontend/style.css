@@ -31,27 +31,68 @@ main{
 form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    width: 45vw;
+    
+    button{
+    justify-self: center;
+    align-self: center;
+    }
+    
+}
 
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    p{
+        margin: 0;
+        padding: 0;
+    }
 }
 
 label{
     display: flex;
     flex-direction: column;
+    gap: 0;
 }
 
 button{
     border-style: none;
     border-radius: 5px;
     background-color: var(--cor-principal);
+
+    font-size: 20px;
+    padding: 3px 8px;
+    max-width: 30vw;
 }
 
 button:hover{
     cursor: pointer;
     background-color: var(--cor-botao-ativo);
     color: var(--cor-secundaria);
+
+    transition: ease 0.3s;
+    box-shadow: 2px 2px blue;
 }
 
 input{
-    
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px 4px;
+
 }
+
+@media (max-width: 500px) {
+
+    main{
+        width: 90vw;
+    }
+
+    form{
+        width: 80vw;
+    }
+}
+    
