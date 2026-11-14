@@ -2,3 +2,5 @@
 Ainda estou testando sua funcionalidade adequadamente
 
 node server.js no terminal para iniciar o servidor
+
+não está rodando na minha máquina
