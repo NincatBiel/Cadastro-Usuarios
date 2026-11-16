@@ -1,6 +1,6 @@
 # Atividade de cadastro de usuários
-Ainda estou testando sua funcionalidade adequadamente
+Está funcionando corretamente
 
-node server.js no terminal para iniciar o servidor
+Dentro da pasta backend: node server.js no terminal para iniciar o servidor
 
-não está rodando na minha máquina
+não está rodando na minha máquina (só na minha máquina)
